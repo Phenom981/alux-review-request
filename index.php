@@ -1,7 +1,7 @@
 <?php
 
-mysql_connect('rhlmysql.db.3158032.hostedresource.com','rhlmysql','RELjcbl!1') or die('Could not connect to DB');
-mysql_select_db('rhlmysql') or die('Could not select reviews DB: ' . mysql_error());
+mysql_connect([database],[username],[password]) or die('Could not connect to DB');
+mysql_select_db([database]) or die('Could not select reviews DB: ' . mysql_error());
 
 if(isset($_POST['submit'])){
 	if(!empty($_POST['firstname']) && !empty($_POST['lastname']) && !empty($_POST['vehicle']) && !empty($_POST['emailaddress'])) {
